@@ -1,17 +1,14 @@
 **Retail Sales Analytics Dashboard**
-This project simulates a retail sales environment and builds a complete data analytics pipeline, from data generation to business intelligence visualization.
-The objective is to demonstrate how raw transactional data can be transformed into actionable insights using Python, SQL and Tableau.
+End-to-end data analytics pipeline that transforms raw transactional data into actionable business insights using Python, MySQL, and Tableau.
 
-**Project Overview**
-A synthetic retail dataset was generated using Python and stored in a relational database.
-Using SQL, an analytical view was creaed to aggregate sales data.
-Finally, Tableau was used to build an **interactive dashboard** to analyze revenue, profit, and sales trends across stores, product categories, and time.
+**Overview**
+This project simulates a retail sales environment across 3 stores, 6 relational tables, and hundreds of transactions. The goal is to demonstrate a complete analytics workflow — from data generation and relational modeling to SQL aggregation and interactive BI visualization.
 
-**Tech Stack**
-    Python (data generation)
-    MySQL (database & relational modeling)
-    SQL (analytical queries and views)  
-    Tableau (data visualization)
+| Tool    | Purpose                        |
+|---------|-------------------------------|
+| Python  | Synthetic data generation      |
+| MySQL   | Relational database and modeling |
+| Tableau | Interactive dashboard & KPIs    |
 
 **Database Schema**
 The simulated retail database includes the following main tables:
@@ -22,13 +19,13 @@ The simulated retail database includes the following main tables:
     sales –> sales transactions
     sales_detail –> individual items sold per transaction
 
-**Key Metrics in the Dashboard**
-The Tableau dashboard analyzes:
+**Dashboard**
+The Tableau dashboard covers the following metrics:
 **KPIs**
     Total Revenue
     Total Profit
     Profit Margin
-**Trend**
+**Trends**
     Revenue by Month
 **Comparisons**
     Revenue by Store
@@ -38,14 +35,20 @@ The Tableau dashboard analyzes:
     Top 10 Best-Selling Products
 
 **Dashboard Preview**
+(Dashboard.png)
 
-**Example Insights**
+**Key Insights**
 Some insights obtained from the simulated data include:
 
-    Beverage products generate the highest revenue and profit.
+    Beverage products generate the highest revenue and profit across all stores.
     Sales performance across the three stores is relatively balanced.
     Seasonal patterns appear in the monthly revenue trend.
     A small group of products contributes significantly to total revenue.
+
+**How to Run**
+1. Database setup - Run *Retail_Database_script.sql* in MySQL Workbench to create the schema and load the analytical view.
+2. Data generation - Execute *seed_data.py* to populate the database with synthetic retail data.
+3. Visualization - Open *Dashboard.twbx* in Tableau Desktop to explore the interactive dashboard.
 
 **Author**
 Esau Cabrejos
