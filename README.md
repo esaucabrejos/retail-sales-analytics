@@ -34,9 +34,6 @@ The Tableau dashboard covers the following metrics:
 **Product Analysis**
     Top 10 Best-Selling Products
 
-**Dashboard Preview**
-(Dashboard.png)
-
 **Key Insights**
 Some insights obtained from the simulated data include:
 
